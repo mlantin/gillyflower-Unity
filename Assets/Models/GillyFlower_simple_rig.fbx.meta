@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: 2869497511ac24bf794caed85c252e7f
+timeCreated: 1521230404
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Anther_GEO1
+    100002: Anther_GEO2
+    100004: Anther_GEO3
+    100006: Anther_GEO4
+    100008: Anther_GEO5
+    100010: Filament_GEO1
+    100012: Filament_GEO2
+    100014: Filament_GEO3
+    100016: Filament_GEO4
+    100018: Filament_GEO5
+    100020: GillyFlower_Simple
+    100022: //RootNode
+    100024: HP_Sepal_1
+    100026: HP_Sepal_2
+    100028: HP_Sepal_3
+    100030: MotionSystem
+    100032: Petal
+    100034: Petal1
+    100036: Petal2
+    100038: Petal3
+    100040: Petal4
+    100042: Petal5
+    100044: Petal_1_1
+    100046: Petal_1_2
+    100048: Petal_1_3
+    100050: Petal_1_4
+    100052: Petal_1_5
+    100054: Petal_2_1
+    100056: Petal_2_2
+    100058: Petal_2_3
+    100060: Petal_2_4
+    100062: Petal_2_5
+    100064: Petal_3_1
+    100066: Petal_3_2
+    100068: Petal_3_3
+    100070: Petal_3_4
+    100072: Petal_3_5
+    100074: Petal_4_1
+    100076: Petal_4_2
+    100078: Petal_4_3
+    100080: Petal_4_4
+    100082: Petal_4_5
+    100084: Petal_5_1
+    100086: Petal_5_2
+    100088: Petal_5_3
+    100090: Petal_5_4
+    100092: Petal_5_5
+    100094: Pistil
+    100096: Root
+    100098: Stamen_Grp
+    100100: Stem1
+    100102: Stem2
+    100104: Stigma1
+    100106: Stigma2
+    100108: Stigma3
+    100110: Stigma4
+    100112: Stigma5
+    100114: Stigma6
+    400000: Anther_GEO1
+    400002: Anther_GEO2
+    400004: Anther_GEO3
+    400006: Anther_GEO4
+    400008: Anther_GEO5
+    400010: Filament_GEO1
+    400012: Filament_GEO2
+    400014: Filament_GEO3
+    400016: Filament_GEO4
+    400018: Filament_GEO5
+    400020: GillyFlower_Simple
+    400022: //RootNode
+    400024: HP_Sepal_1
+    400026: HP_Sepal_2
+    400028: HP_Sepal_3
+    400030: MotionSystem
+    400032: Petal
+    400034: Petal1
+    400036: Petal2
+    400038: Petal3
+    400040: Petal4
+    400042: Petal5
+    400044: Petal_1_1
+    400046: Petal_1_2
+    400048: Petal_1_3
+    400050: Petal_1_4
+    400052: Petal_1_5
+    400054: Petal_2_1
+    400056: Petal_2_2
+    400058: Petal_2_3
+    400060: Petal_2_4
+    400062: Petal_2_5
+    400064: Petal_3_1
+    400066: Petal_3_2
+    400068: Petal_3_3
+    400070: Petal_3_4
+    400072: Petal_3_5
+    400074: Petal_4_1
+    400076: Petal_4_2
+    400078: Petal_4_3
+    400080: Petal_4_4
+    400082: Petal_4_5
+    400084: Petal_5_1
+    400086: Petal_5_2
+    400088: Petal_5_3
+    400090: Petal_5_4
+    400092: Petal_5_5
+    400094: Pistil
+    400096: Root
+    400098: Stamen_Grp
+    400100: Stem1
+    400102: Stem2
+    400104: Stigma1
+    400106: Stigma2
+    400108: Stigma3
+    400110: Stigma4
+    400112: Stigma5
+    400114: Stigma6
+    4300000: Filament_GEO5
+    4300002: Anther_GEO5
+    4300004: Filament_GEO4
+    4300006: Anther_GEO4
+    4300008: Anther_GEO3
+    4300010: Filament_GEO3
+    4300012: Anther_GEO2
+    4300014: Filament_GEO2
+    4300016: Anther_GEO1
+    4300018: Filament_GEO1
+    4300020: Stigma2
+    4300022: Stigma1
+    4300024: Stigma3
+    4300026: Stigma4
+    4300028: Stigma6
+    4300030: Stigma5
+    4300032: Petal1
+    4300034: Petal2
+    4300036: Petal3
+    4300038: Petal4
+    4300040: Petal5
+    4300042: HP_Sepal_1
+    4300044: HP_Sepal_2
+    4300046: HP_Sepal_3
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Anther_GEO1
+    13700002: Anther_GEO2
+    13700004: Anther_GEO3
+    13700006: Anther_GEO4
+    13700008: Anther_GEO5
+    13700010: Filament_GEO1
+    13700012: Filament_GEO2
+    13700014: Filament_GEO3
+    13700016: Filament_GEO4
+    13700018: Filament_GEO5
+    13700020: HP_Sepal_1
+    13700022: HP_Sepal_2
+    13700024: HP_Sepal_3
+    13700026: Petal1
+    13700028: Petal2
+    13700030: Petal3
+    13700032: Petal4
+    13700034: Petal5
+    13700036: Stigma1
+    13700038: Stigma2
+    13700040: Stigma3
+    13700042: Stigma4
+    13700044: Stigma5
+    13700046: Stigma6
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: MotionSystem/Root
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.6
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
