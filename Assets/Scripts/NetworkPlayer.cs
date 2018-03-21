@@ -17,8 +17,9 @@ public class NetworkPlayer : NetworkBehaviour {
 			playercamera.enabled = false;
 		}
 		if (NetworkSetup.HostMode == 1) { // We are the dome
-			// Make ourselves invisible
+			// Make ourselves invisible and disable the camera
 			gameObject.transform.Find ("PlayerCamera/Avatar").gameObject.SetActive (false);
+			gameObject.transform.Find ("PlayerCamera").GetComponent<Camera> ().enabled = false;
 		}
 	}
 
@@ -49,9 +50,13 @@ public class NetworkPlayer : NetworkBehaviour {
 		Transform controller = Instantiate(controllerPrefab);
 		controller.transform.parent = gameObject.transform;
 		controller.transform.localPosition = Vector3.zero;
+		GvrBasePointer pointer =
+			controller.GetComponentInChildren<DaydreamElements.ObjectManipulation.ObjectManipulationPointer> (true);
+		if (pointer != null) {
+			Debug.Log ("Setting the pointer");
+			GvrPointerInputModule.Pointer = pointer;	
+		}
 	}
-
-
 
 	// Update is called once per frame
 	void Update () {

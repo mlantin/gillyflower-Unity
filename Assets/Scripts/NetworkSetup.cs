@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.Networking;
 using UnityEngine.XR;
 
@@ -32,7 +33,7 @@ public class NetworkSetup : MonoBehaviour {
 
 		HostMode = hostmode;
 		NetworkManager.singleton.networkAddress = PrefsAndUI.ServerIP;
-		UICanvas.enabled = false;
+		UICanvas.gameObject.SetActive (false);
 		switch (hostmode) {
 		case 1: // Dome Host
 			setupDome ();
