@@ -7,7 +7,7 @@ using UnityEngine.XR;
 
 public class NetworkSetup : MonoBehaviour {
 
-	static int HostMode = 0;
+	public static int HostMode = 0;
 
 	public GameObject domeRig;
 	public GameObject gvrGroup;
@@ -32,7 +32,6 @@ public class NetworkSetup : MonoBehaviour {
 
 		HostMode = hostmode;
 		NetworkManager.singleton.networkAddress = PrefsAndUI.ServerIP;
-		UICamera.SetActive(false);
 		UICanvas.enabled = false;
 		switch (hostmode) {
 		case 1: // Dome Host
@@ -44,11 +43,14 @@ public class NetworkSetup : MonoBehaviour {
 			NetworkManager.singleton.StartHost ();
 			break;
 		case 3:
+			StartCoroutine (switchToVR ());
+			NetworkManager.singleton.StartClient ();
 			break;
 		}
 	}
 
 	void setupDome(){
+		UICamera.SetActive(false);
 		domeRig.SetActive(true);
 	}
 
