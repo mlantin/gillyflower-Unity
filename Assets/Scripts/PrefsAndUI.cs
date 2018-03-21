@@ -16,7 +16,6 @@ public class PrefsAndUI : MonoBehaviour {
 	public void changeServerIP(string serverIP){
 		ServerIP = serverIP;
 		PlayerPrefs.SetString ("ServerIP", ServerIP);
-		Debug.Log ("Server IP is now " + ServerIP);
 	}
 
 	public void changeSoundServerIP(string soundServerIP) {
@@ -32,7 +31,6 @@ public class PrefsAndUI : MonoBehaviour {
 			ServerIP = "127.0.0.1";
 
 		InputField serverip = transform.Find ("Panel/Server/ServerField").gameObject.GetComponent<InputField> ();
-		Debug.Log ("The server ip is " + ServerIP);
 		serverip.text = ServerIP;
 
 		// Set Sound Server IP
