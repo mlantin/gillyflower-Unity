@@ -16,16 +16,13 @@ public class AnimControl : MonoBehaviour {
 	}
 
 	public void playAnimation() {
-		#if UNITY_ANDROID && !UNITY_EDITOR
-		GetComponent<GvrVideoPlayerTexture> ().Play ();
-		#else
-		GetComponent<VideoPlayer>().Play();
-		#endif
+		Debug.Log ("Going to call the command to start animation");
+		NetworkPlayer.LocalPlayer.performerActions.CmdStartAnimation();
 	}
 
 	void OnGUI() {
 		Event e = Event.current;
-		if (e.isKey && e.keyCode == KeyCode.Space)
+		if (e.isKey && e.keyCode == KeyCode.Space && e.type == EventType.KeyDown)
 			playAnimation ();
 	}
 }

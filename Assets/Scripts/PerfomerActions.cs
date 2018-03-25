@@ -1,8 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
+using UnityEngine.Networking;
 
-public class PerfomerActions : MonoBehaviour {
+public class PerfomerActions : NetworkBehaviour {
+
+	[SyncVar (hook = "playAnimHook")]
+	bool playAnim = false;
 
 	// Use this for initialization
 	void Start () {
@@ -12,5 +17,21 @@ public class PerfomerActions : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	[Command]
+	public void CmdStartAnimation() {
+		Debug.Log ("in CmdStartAnimation");
+		playAnim = true;
+	}
+
+	public void playAnimHook(bool state) {
+		playAnim = state;
+		GameObject domeObj = GameObject.Find ("dome");
+		#if UNITY_ANDROID && !UNITY_EDITOR
+		domeObj.GetComponent<GvrVideoPlayerTexture> ().Play ();
+		#else
+		domeObj.GetComponent<VideoPlayer>().Play();
+		#endif
 	}
 }

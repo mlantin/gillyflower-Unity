@@ -5,6 +5,9 @@ using UnityEngine.Networking;
 
 public class NetworkPlayer : NetworkBehaviour {
 	public Transform controllerPrefab;
+	public PerfomerActions performerActions;
+
+	public static NetworkPlayer LocalPlayer = null;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +30,7 @@ public class NetworkPlayer : NetworkBehaviour {
 		Debug.Log ("In StartLocalPlayer for NetworkPlayer");
 		// tag the local player so we can look for it later in other objects
 		gameObject.tag = "Player";
+		LocalPlayer = this;
 
 		if (NetworkSetup.HostMode == 1) // we're the dome so don't change anything
 			return;
@@ -57,6 +61,31 @@ public class NetworkPlayer : NetworkBehaviour {
 			GvrPointerInputModule.Pointer = pointer;	
 		}
 	}
+
+	[Command]
+	public void CmdAssignAuthority(NetworkInstanceId netInstanceId)
+	{
+		// Assign authority of this objects network instance id to the client
+		bool success = false;
+		GameObject obj = NetworkServer.objects [netInstanceId].gameObject;
+		// Debug.Log ("Assign authority for " + netId);
+		success = NetworkServer.objects [netInstanceId].AssignClientAuthority (connectionToClient);
+
+		if (success)
+			Debug.Log ("Successfully assigned authority to " + netInstanceId);
+		else
+			Debug.Log ("could not assign authority");
+	}
+
+	[Command]
+	public void CmdRemoveAuthority(NetworkInstanceId netInstanceId)
+	{
+		// Removes the  authority of this object network instance id to the client
+		bool success = NetworkServer.objects[netInstanceId].RemoveClientAuthority(connectionToClient);
+		if (success)
+			Debug.Log ("Successfully removed authority of object" + netInstanceId + "from " + connectionToClient);
+	}
+
 
 	// Update is called once per frame
 	void Update () {

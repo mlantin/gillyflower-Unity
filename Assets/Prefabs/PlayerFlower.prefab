@@ -433,6 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controllerPrefab: {fileID: 4016741902477884, guid: 72b5aa4dc0a00344297853bba3c17baa,
     type: 2}
+  performerActions: {fileID: 114407600536940416}
 --- !u!114 &114746145845716326
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -124,7 +124,6 @@ public class GvrPointerGraphicRaycaster : GvrBasePointerRaycaster {
         Vector3 dir = go.transform.rotation * Vector3.forward;
         appendGraphic = Vector3.Dot(cameraFoward, dir) > 0;
       }
-
       if (appendGraphic) {
         float resultDistance = 0;
 
@@ -166,7 +165,6 @@ public class GvrPointerGraphicRaycaster : GvrBasePointerRaycaster {
         foundHit = true;
       }
     }
-
     return foundHit;
   }
 
