@@ -77,7 +77,6 @@ public class GvrPointerPhysicsRaycaster : GvrBasePointerRaycaster {
       if (pointer == null) {
         return null;
       }
-
       return pointer.PointerCamera;
     }
   }

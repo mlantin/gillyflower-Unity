@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 using UnityEngine.EventSystems;
 using UnityEngine.Networking;
 using UnityEngine.XR;
@@ -11,9 +12,14 @@ public class NetworkSetup : MonoBehaviour {
 	public static int HostMode = 0;
 
 	public GameObject domeRig;
+	public GameObject domeObj;
 	public GameObject gvrGroup;
+	public Material gvrVideoMat;
 	public Canvas UICanvas;
 	public GameObject UICamera;
+
+
+	Material[] domeMats;
 
 	// Use this for initialization
 	void Start () {
@@ -53,10 +59,26 @@ public class NetworkSetup : MonoBehaviour {
 	void setupDome(){
 		UICamera.SetActive(false);
 		domeRig.SetActive(true);
+		// Enable the Unity Video Texture Player
+		domeObj.GetComponentInChildren<VideoPlayer>().enabled = true;
 	}
 
 	void setupGVR() {
 		gvrGroup.SetActive (true);
+
+		#if UNITY_ANDROID && !UNITY_EDITOR
+		// Assign a different material
+		domeMats = domeObj.GetComponent<Renderer>().materials;
+		domeMats [0] = gvrVideoMat;
+		domeObj.GetComponent<Renderer>().materials = domeMats;
+		// Enable the gvr video texture player to play the file jar:file://${Application.dataPath}!/assets/animaticpoem_1.mp4
+		GvrVideoPlayerTexture gvrplayer = domeObj.GetComponentInChildren<GvrVideoPlayerTexture>();
+		gvrplayer.enabled = true;
+		gvrplayer.Init ();
+		#else
+		// Enable the Unity Video Texture Player
+		domeObj.GetComponentInChildren<VideoPlayer>().enabled = true;
+		#endif
 	}
 
 	// Call via `StartCoroutine(SwitchToVR())` from your code. Or, use
