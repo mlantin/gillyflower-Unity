@@ -44,6 +44,9 @@ public class NetworkPlayer : NetworkBehaviour {
 			currentMainCamera.enabled = false;
 		playercamera.enabled = true;
 
+		// Add the Resonance Audio Listener
+		playerCameraObj.AddComponent<ResonanceAudioListener>();
+
 		// Add the GVR Physics Raycaster
 		playerCameraObj.AddComponent<GvrPointerPhysicsRaycaster>();
 

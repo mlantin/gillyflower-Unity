@@ -27,7 +27,7 @@ public class PerfomerActions : NetworkBehaviour {
 
 	public void playAnimHook(bool state) {
 		playAnim = state;
-		GameObject domeObj = GameObject.Find ("dome");
+		GameObject domeObj = GameObject.Find ("Dome");
 		#if UNITY_ANDROID && !UNITY_EDITOR
 		domeObj.GetComponent<GvrVideoPlayerTexture> ().Play ();
 		#else

@@ -165,6 +165,7 @@ namespace DaydreamElements.ObjectManipulation {
     protected virtual void OnDeselect() {
       state = ObjectState.Released;
       lastStateChangeFrame = Time.frameCount;
+			NetworkPlayer.LocalPlayer.CmdRemoveAuthority (netId);
     }
 
     protected virtual void OnDrag() {
@@ -212,7 +213,7 @@ namespace DaydreamElements.ObjectManipulation {
       }
 
       OnDeselect();
-			NetworkPlayer.LocalPlayer.CmdRemoveAuthority (netId);
+
     }
 
     // Clear all state and mark the object as ready for selection.
