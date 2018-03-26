@@ -19,6 +19,7 @@ public class ChatterMesh : MonoBehaviour {
 	}
 
 	void generateEquidistantSources() {
+		// algo from here: https://www.cmu.edu/biolphys/deserno/pdf/sphere_equi.pdf
 		float x, y, z;
 		float sintheta;
 		float a, d, d_theta, d_phi;

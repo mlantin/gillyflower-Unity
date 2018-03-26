@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.Playables;
 using UnityEngine.Networking;
 
 public class PerfomerActions : NetworkBehaviour {
@@ -32,6 +33,8 @@ public class PerfomerActions : NetworkBehaviour {
 		domeObj.GetComponent<GvrVideoPlayerTexture> ().Play ();
 		#else
 		domeObj.GetComponent<VideoPlayer>().Play();
+		PlayableDirector director = domeObj.GetComponent<PlayableDirector>();
+		director.Play();
 		#endif
 	}
 }
