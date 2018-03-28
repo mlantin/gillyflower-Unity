@@ -34,26 +34,24 @@ public class IntervalChatter : MonoBehaviour {
 		chatterSource = gameObject.GetComponent<ResonanceAudioSource> ().audioSource;
 		chatterSource.clip = chatterclip;
 		// Initialize with a random delay
-		delay = Random.value*5;
+		delay = Random.value*10;
 	}
-		
+
 	// Update is called once per frame
 	void Update () {
+		if (ShowControl.Chattering == false)
+			return;
 		if (!scheduled && !chatterSource.isPlaying) {
-			chatterSource.Stop ();
-			StartCoroutine ("chatterAway");
-			delay = ChatterControl.Interval;
+			chatterAway ();
+			delay = ShowControl.Interval;
 			//delay = 1f;
 		} else if (scheduled && chatterSource.isPlaying) {
 			scheduled = false;
 		}
 	}
 
-	IEnumerator chatterAway() {
+	void chatterAway() {
 		scheduled = true;
-		yield return new WaitForSeconds (delay);
-		Debug.Log (Time.fixedTime+": Playing the sound for gameobject "+gameObject.GetInstanceID());
-
-		chatterSource.Play();
+		chatterSource.PlayDelayed (delay);
 	}
 }

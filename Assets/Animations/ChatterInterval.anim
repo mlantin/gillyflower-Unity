@@ -21,46 +21,40 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 2.932283
+        value: 3
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 49.566666
-        value: 1.7322822
+        time: 60.183334
+        value: 2
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 93.53333
-        value: 5.132284
+        time: 120.083336
+        value: 10
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 145.51666
-        value: 0.5322838
+        time: 180.26666
+        value: 7
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 203.16667
-        value: 5.132284
-        inSlope: 0.10581674
-        outSlope: 0.10581674
+        time: 240.01666
+        value: 12
+        inSlope: 0.064386316
+        outSlope: 0.064386316
         tangentMode: 136
       - serializedVersion: 2
-        time: 266.43332
-        value: 13.32729
+        time: 304.51666
+        value: 15
         inSlope: 0
         outSlope: 0
         tangentMode: 136
-      - serializedVersion: 2
-        time: 324.81668
-        value: 8.506922
-        inSlope: 0.88204676
-        outSlope: 0.88204676
-        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -89,12 +83,12 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 324.81668
+    m_StopTime: 304.51666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -110,46 +104,40 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 2.932283
+        value: 3
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 49.566666
-        value: 1.7322822
+        time: 60.183334
+        value: 2
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 93.53333
-        value: 5.132284
+        time: 120.083336
+        value: 10
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 145.51666
-        value: 0.5322838
+        time: 180.26666
+        value: 7
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 203.16667
-        value: 5.132284
-        inSlope: 0.10581674
-        outSlope: 0.10581674
+        time: 240.01666
+        value: 12
+        inSlope: 0.064386316
+        outSlope: 0.064386316
         tangentMode: 136
       - serializedVersion: 2
-        time: 266.43332
-        value: 13.32729
+        time: 304.51666
+        value: 15
         inSlope: 0
         outSlope: 0
         tangentMode: 136
-      - serializedVersion: 2
-        time: 324.81668
-        value: 8.506922
-        inSlope: 0.88204676
-        outSlope: 0.88204676
-        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -161,4 +149,12 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: startChatter
+    data: 
+    objectReferenceParameter: {fileID: 100000, guid: 12352bac22077487b84647a3455c4f20,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

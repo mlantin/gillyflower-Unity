@@ -3743,9 +3743,9 @@ GameObject:
   - component: {fileID: 835441433}
   - component: {fileID: 835441428}
   - component: {fileID: 835441432}
+  - component: {fileID: 835441429}
   - component: {fileID: 835441431}
   - component: {fileID: 835441430}
-  - component: {fileID: 835441429}
   - component: {fileID: 835441427}
   - component: {fileID: 835441425}
   - component: {fileID: 835441426}
@@ -3845,6 +3845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlobalChatterInterval: 3
+  GlobalChattering: 0
 --- !u!95 &835441430
 Animator:
   serializedVersion: 3
