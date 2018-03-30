@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/GoogleVR/Demos/Scenes/VideoDemo.unity
     guid: c79d901ffb34f428eadaa3a7269a6c7c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/DomeTest.unity
     guid: a6fcdbe4f149541bfbc7d45484185637
-  - enabled: 1
+  - enabled: 0
     path: Assets/ResonanceAudio/Demos/Scenes/ResonanceAudioDemo.unity
     guid: 8a87eab7a9f7d42468d0c9cf1ba30cf4

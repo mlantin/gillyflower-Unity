@@ -30,8 +30,4 @@ public class ShowControl : MonoBehaviour {
 			return singleton.GlobalChattering;
 		}
 	}
-
-	public void startChatter() {
-		GlobalChattering = true;
-	}
 }

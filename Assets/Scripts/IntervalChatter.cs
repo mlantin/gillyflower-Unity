@@ -24,7 +24,10 @@ public class IntervalChatter : MonoBehaviour {
 
 	private AudioSource chatterSource;
 	private float delay;
+	private bool firstplay = true;
 	private bool scheduled = false;
+
+	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
@@ -33,8 +36,9 @@ public class IntervalChatter : MonoBehaviour {
 		AudioClip chatterclip = Resources.Load (chatterSounds [soundidx]) as AudioClip;
 		chatterSource = gameObject.GetComponent<ResonanceAudioSource> ().audioSource;
 		chatterSource.clip = chatterclip;
-		// Initialize with a random delay
-		delay = Random.value*10;
+
+		// Check to see if we have an animator
+		animator = gameObject.GetComponentInChildren<Animator>();
 	}
 
 	// Update is called once per frame
@@ -42,16 +46,29 @@ public class IntervalChatter : MonoBehaviour {
 		if (ShowControl.Chattering == false)
 			return;
 		if (!scheduled && !chatterSource.isPlaying) {
-			chatterAway ();
-			delay = ShowControl.Interval;
-			//delay = 1f;
+			if (firstplay) {
+				delay = Random.value * 10;
+				firstplay = false;
+			}
+			else {
+				delay = ShowControl.Interval;
+				setFlowerState (false);
+			}
+			StartCoroutine ("chatterAway");
 		} else if (scheduled && chatterSource.isPlaying) {
+			setFlowerState (true);
 			scheduled = false;
 		}
 	}
 
-	void chatterAway() {
+	IEnumerator chatterAway() {
 		scheduled = true;
-		chatterSource.PlayDelayed (delay);
+		yield return new WaitForSeconds (delay);
+		chatterSource.Play ();
+	}
+
+	void setFlowerState(bool openstate) {
+		if (animator != null)
+			animator.SetBool ("open", openstate);
 	}
 }

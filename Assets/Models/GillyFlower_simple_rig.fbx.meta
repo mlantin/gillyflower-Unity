@@ -3,7 +3,7 @@ guid: 2869497511ac24bf794caed85c252e7f
 timeCreated: 1521230404
 licenseType: Free
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Anther_GEO1
     100002: Anther_GEO2
@@ -145,7 +145,7 @@ ModelImporter:
     4300042: HP_Sepal_1
     4300044: HP_Sepal_2
     4300046: HP_Sepal_3
-    7400000: Take 001
+    7400000: Simple Flower Take
     9500000: //RootNode
     13700000: Anther_GEO1
     13700002: Anther_GEO2
@@ -171,10 +171,47 @@ ModelImporter:
     13700042: Stigma4
     13700044: Stigma5
     13700046: Stigma6
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HP_Petal_Mtl1
+    second: {fileID: 2100000, guid: 73c4a782bd3124b7e8a9ee8e7a29c802, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sepal_Mtl6
+    second: {fileID: 2100000, guid: d7b3df3b5125a436780fde320657ffab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sepal_Mtl7
+    second: {fileID: 2100000, guid: 4ef2909d8862f43f99a8bc40776c32e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert10
+    second: {fileID: 2100000, guid: ea31c36e89b4f452aad75a57e8649169, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert11
+    second: {fileID: 2100000, guid: 633fb8b59a3aa45088b2b6db2a32b639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert7
+    second: {fileID: 2100000, guid: 0ff08b5d3719d409a88e6f1dda8ccb4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: d46c1e6dc955a463da770f27726f87dd, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -187,6 +224,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -196,7 +234,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Simple Flower Take
       takeName: Take 001
       firstFrame: 1
       lastFrame: 96
@@ -239,6 +277,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

@@ -6,6 +6,9 @@ public class ChatterMesh : MonoBehaviour {
 
 	public int numSources;
 	public Transform audioSourcePrefab;
+	public Transform flowerPrefab;
+
+	private Transform flower;
 
 	// Use this for initialization
 	void Start () {
@@ -46,9 +49,21 @@ public class ChatterMesh : MonoBehaviour {
 				// rotate to face the centre of the ground
 				audioSource.SetPositionAndRotation (p, Quaternion.LookRotation(-p));
 				audioSource.transform.parent = this.gameObject.transform;
+
+				//make a simple gillyflower
+				makeFlower(p);
+				flower.transform.parent = audioSource.transform;
+
 				pointCount++;
 			}
 		}
 		Debug.Log ("Generated a total of " + pointCount + " audio sources");
+	}
+
+	void makeFlower(Vector3 p) {
+		flower = Instantiate (flowerPrefab);
+		flower.transform.position = p;
+		Quaternion r = Quaternion.LookRotation (Vector3.forward, -p);
+		flower.transform.rotation = r;
 	}
 }
