@@ -36,7 +36,7 @@ public class ChatterMesh : MonoBehaviour {
 		d_theta = Mathf.PI * .5f / M_theta;
 		d_phi = a / d_theta;
 		for (int m = 0; m < M_theta; m++) {
-			theta = (Mathf.PI * .5f) *(m + .05f) / M_theta;
+			theta = (Mathf.PI * .5f) *(m + .5f) / M_theta;
 			M_phi = (int) Mathf.Round(2*Mathf.PI*Mathf.Sin(theta)/d_phi);
 			for (int n = 0; n < M_phi; n++) {
 				phi = 2*Mathf.PI * n / M_phi;
