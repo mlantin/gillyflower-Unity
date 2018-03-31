@@ -1,0 +1,80 @@
+ManifestFileVersion: 0
+CRC: 1238377899
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 965b9de4f97471dc19e76549e82d888c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Sounds/A2_pluck_D.wav
+- Assets/Sounds/D4_pluck_H.wav
+- Assets/Sounds/D2_pluck_H.wav
+- Assets/Sounds/D4_pluck_C.wav
+- Assets/Sounds/A3_pluck_N.wav
+- Assets/Sounds/D3_pluck_C.wav
+- Assets/Sounds/A2_pluck_C.wav
+- Assets/Sounds/F#_pluck_E.wav
+- Assets/Sounds/A3_pluck_Q.wav
+- Assets/Sounds/D2_pluck_E.wav
+- Assets/Sounds/F#_pluck_A.wav
+- Assets/Sounds/D3_pluck_E.wav
+- Assets/Sounds/A3_pluck_F.wav
+- Assets/Sounds/F#_pluck_F.wav
+- Assets/Sounds/D4_pluck_A.wav
+- Assets/Sounds/D2_pluck_D.wav
+- Assets/Sounds/A2_pluck_B.wav
+- Assets/Sounds/D3_pluck_A.wav
+- Assets/Sounds/F#_pluck_H.wav
+- Assets/Sounds/D2_pluck_L.wav
+- Assets/Sounds/A2_pluck_F.wav
+- Assets/Sounds/A3_pluck_L.wav
+- Assets/Sounds/A3_pluck_B.wav
+- Assets/Sounds/D4_pluck_K.wav
+- Assets/Sounds/F#_pluck_B.wav
+- Assets/Sounds/D4_pluck_J.wav
+- Assets/Sounds/D2_pluck_G.wav
+- Assets/Sounds/A3_pluck_R.wav
+- Assets/Sounds/F#_pluck_D.wav
+- Assets/Sounds/D4_pluck_L.wav
+- Assets/Sounds/A3_pluck_K.wav
+- Assets/Sounds/A3_pluck_C.wav
+- Assets/Sounds/D4_pluck_G.wav
+- Assets/Sounds/A3_pluck_P.wav
+- Assets/Sounds/D4_pluck_D.wav
+- Assets/Sounds/F#_pluck_C.wav
+- Assets/Sounds/D3_pluck_B.wav
+- Assets/Sounds/A3_pluck_D.wav
+- Assets/Sounds/D2_pluck_N.wav
+- Assets/Sounds/A2_pluck_E.wav
+- Assets/Sounds/A3_pluck_H.wav
+- Assets/Sounds/A3_pluck_E.wav
+- Assets/Sounds/A3_pluck_G.wav
+- Assets/Sounds/A3_pluck_M.wav
+- Assets/Sounds/D3_pluck_D.wav
+- Assets/Sounds/A2_pluck_A.wav
+- Assets/Sounds/A2_pluck_J.wav
+- Assets/Sounds/F#_pluck_G.wav
+- Assets/Sounds/D2_pluck_J.wav
+- Assets/Sounds/D4_pluck_F.wav
+- Assets/Sounds/D3_pluck_F.wav
+- Assets/Sounds/A3_pluck_A.wav
+- Assets/Sounds/A2_pluck_H.wav
+- Assets/Sounds/D2_pluck_K.wav
+- Assets/Sounds/D2_pluck_M.wav
+- Assets/Sounds/D4_pluck_B.wav
+- Assets/Sounds/D2_pluck_A.wav
+- Assets/Sounds/A2_pluck_G.wav
+- Assets/Sounds/D2_pluck_B.wav
+- Assets/Sounds/D4_pluck_E.wav
+- Assets/Sounds/D3_pluck_G.wav
+- Assets/Sounds/D2_pluck_P.wav
+- Assets/Sounds/D2_pluck_F.wav
+- Assets/Sounds/A3_pluck_J.wav
+- Assets/Sounds/D2_pluck_C.wav
+Dependencies: []
