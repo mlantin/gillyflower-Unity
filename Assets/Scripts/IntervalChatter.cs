@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class IntervalChatter : MonoBehaviour {
@@ -22,7 +23,10 @@ public class IntervalChatter : MonoBehaviour {
 		"Sounds/F#_pluck_D","Sounds/F#_pluck_E","Sounds/F#_pluck_F","Sounds/F#_pluck_G"
 	};
 
-	private AudioSource chatterSource;
+    private static AssetBundle GillyBundle = null;
+    private bool BundleLoaded = false;
+
+    private AudioSource chatterSource;
 	private float delay;
 	private bool firstplay = true;
 	private bool scheduled = false;
@@ -31,9 +35,19 @@ public class IntervalChatter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        if (GillyBundle == null && !BundleLoaded)
+        {
+            BundleLoaded = true;
+            GillyBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/gillyflower"));
+            if (!GillyBundle)
+                Debug.Log("Could not load the gillyflower bundle");
+        }
 		// Pick a random sound
 		int soundidx = Mathf.FloorToInt(Random.value*(chatterSounds.GetLength(0)-1));
-		AudioClip chatterclip = Resources.Load (chatterSounds [soundidx]) as AudioClip;
+        //		AudioClip chatterclip = Resources.Load (chatterSounds [soundidx]) as AudioClip;
+        AudioClip chatterclip = GillyBundle.LoadAsset<AudioClip>("Assets/"+chatterSounds[soundidx]+".wav");
+        if (!chatterclip)
+            Debug.Log("Could not find the file in the bundle");
 		chatterSource = gameObject.GetComponent<ResonanceAudioSource> ().audioSource;
 		chatterSource.clip = chatterclip;
 

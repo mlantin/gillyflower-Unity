@@ -50,9 +50,6 @@ public class NetworkPlayer : NetworkBehaviour {
 		// Add the GVR Physics Raycaster
 		playerCameraObj.AddComponent<GvrPointerPhysicsRaycaster>();
 
-		// Add an audio listener
-		playercamera.gameObject.AddComponent<AudioListener>();
-
 		// Add a GVR Controller
 		Transform controller = Instantiate(controllerPrefab);
 		controller.transform.parent = gameObject.transform;

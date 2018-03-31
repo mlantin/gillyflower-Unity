@@ -33,8 +33,8 @@ public class PerfomerActions : NetworkBehaviour {
 		domeObj.GetComponent<GvrVideoPlayerTexture> ().Play ();
 		#else
 		domeObj.GetComponent<VideoPlayer>().Play();
-		PlayableDirector director = domeObj.GetComponent<PlayableDirector>();
+        #endif
+        PlayableDirector director = domeObj.GetComponent<PlayableDirector>();
 		director.Play();
-		#endif
 	}
 }
